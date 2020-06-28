@@ -22,6 +22,7 @@ function! fzf_preview#resource_processor#get_default_processors() abort
   let processors[g:fzf_preview_tabedit_key_map] = function('fzf_preview#resource_processor#tabedit')
   let processors[g:fzf_preview_build_quickfix_key_map] = function('fzf_preview#resource_processor#export_quickfix')
   let processors[g:fzf_preview_drop_key_map] = function('fzf_preview#resource_processor#drop')
+  let processors[g:fzf_preview_bdelete_key_map] = function('fzf_preview#resource_processor#bdelete')
 
   return processors
 endfunction
@@ -70,6 +71,10 @@ function! fzf_preview#resource_processor#drop(lines) abort
   else
     call s:open_files('drop', a:lines)
   endif
+endfunction
+
+function! fzf_preview#resource_processor#bdelete(lines) abort
+  call s:open_files('bdelete', a:lines)
 endfunction
 
 function! fzf_preview#resource_processor#export_quickfix(lines) abort
