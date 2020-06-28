@@ -181,12 +181,12 @@ nnoremap <silent> [fzf-p]l     :<C-u>FzfPreviewLocationList<CR>
 <C-t>
   Open tabedit
 
-<C-d>
+<C-x>
   Delete buffer
 
 <C-o>
   Jump to buffer if already open. See :drop.
-  If g:fzf_preview_buffers_jump is set to 1 then it will open the buffer in 
+  If g:fzf_preview_buffers_jump is set to 1 then it will open the buffer in
   current window instead.
 
 <C-q>

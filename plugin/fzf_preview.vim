@@ -117,7 +117,7 @@ if !exists('g:fzf_preview_drop_key_map')
 endif
 
 if !exists('g:fzf_preview_bdelete_key_map')
-  let g:fzf_preview_bdelete_key_map = 'ctrl-d'
+  let g:fzf_preview_bdelete_key_map = 'ctrl-x'
 endif
 
 if !exists('g:fzf_preview_build_quickfix_key_map')
